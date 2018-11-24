@@ -5,4 +5,5 @@ import { Component } from "@angular/core";
     moduleId: module.id,
     template: `<page-router-outlet></page-router-outlet>`,
 })
-export class AppComponent { }
+export class AppComponent {
+}
