@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterExtensions } from 'nativescript-angular/router';
 
 @Component({
 	moduleId: module.id,
@@ -9,7 +10,13 @@ import { Component, OnInit } from '@angular/core';
 
 export class PageOneComponent implements OnInit {
 
-	constructor() { }
+	constructor(
+		private router: RouterExtensions
+	) { }
 
 	ngOnInit() { }
+
+	public onNavigate() {
+		this.router.navigate(['/page-two']);
+	}
 }
