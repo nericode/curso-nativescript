@@ -11,7 +11,7 @@ The ActionBar is the NativeScript common abstraction over the Android ActionBar 
 http://docs.nativescript.org/ui/action-bar
 -->
 <ActionBar 
-    title="Curso Nativescript" 
+    title="Curso" 
     class="action-bar">
 </ActionBar>
 
@@ -27,5 +27,26 @@ class names available for styling your app at https://docs.nativescript.org/ui/t
 -->
 <StackLayout 
     class="page">
+
+    <Label 
+        class="h3 p-15" 
+        text="Label (no binding)" 
+        textWrap="true">
+    </Label>
+
+    <TextField 
+        hint="Enter date"  
+        secure="false"
+        keyboardType="datetime"
+        returnKeyType="done" 
+        autocorrect="false"
+        maxLength="10"
+        class="input input-border">
+    </TextField>
+
+    <Button 
+        class="btn btn-primary btn-active" 
+        text="Tap me!">
+    </Button>
     
 </StackLayout>
